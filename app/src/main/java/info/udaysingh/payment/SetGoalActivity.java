@@ -16,8 +16,7 @@ import android.widget.Toast;
 
 import com.razorpay.Checkout;
 import com.razorpay.PaymentResultListener;
-import com.yuyakaido.android.cardstackview.CardStackView;
-import com.yuyakaido.android.cardstackview.SwipeDirection;
+
 
 import org.json.JSONObject;
 
@@ -26,7 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SetGoalActivity extends AppCompatActivity implements PaymentResultListener{
-    private CardStackView cardStackView;
+
     private CardStackAdapter adapter;
 
     @Override
@@ -50,7 +49,7 @@ public class SetGoalActivity extends AppCompatActivity implements PaymentResultL
                     options.put("name", "Gray Hat Pvt. Ltd.");
                     options.put("description", "Adding to Your Savings");
                     //You can omit the image option to fetch the image from dashboard
-                    
+
 
                     options.put("image", "https://rzp-mobile.s3.amazonaws.com/images/rzp.png");
                     options.put("currency", "INR");
